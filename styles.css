@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --color-white: white;
+  --color-black: black;
+  --color-denim: #151e3d;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;  
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-white);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background: var(--color-denim);
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  color: black;
+  text-transform: capitalize;
+  background: #C1E3E8;
+}
+
+.about-me h1 {
+  font-size: 5.5rem;
+}
+
+.about-me p {
+  font-size: 1.5rem;
+}
+
+
+
+.projects {
+  text-align: center;
+  padding: 7rem 0 2rem 0;
+  color: var(--color-white);
+  background-color: #46718C;
+}
+
+.projects-header {
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+  font-size: 2.5rem;
+}
+
+.projects-header p {
+  font-size: 1.5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.project {
+  background: var(--color-denim);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0 / 50%);
+  border-radius: 5px;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+
+  background-color: #213140;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 4.5rem;
+  padding-top: 3rem;
+}
+
+.contact p {
+  font-size: 1.250rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+
+.contact-details {
+  font-size: 2rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  color: white;
+}
+
+
+@media screen and (max-width: 650px) {
+  .nav {
+    justify-content: center;
+  }
+
+  .projects {
+    padding: 6rem  1rem;
+  }
+
+  .contact {
+    width: 100%;
+    height: 130vh;;
+  }
+  
+}
+
+
